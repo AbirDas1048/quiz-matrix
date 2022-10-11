@@ -1,17 +1,30 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
+import Question from '../Question/Question';
 
 const Questions = () => {
     const loadedAllData = useLoaderData();
     const { status, data } = loadedAllData;
     const { name, questions } = data;
+    let quizNo = 1;
     return (
-        <div>
+        <div className='my-3'>
             {status === true ?
-                <div>
-                    <p className='text-center'>Quiz of {name}</p>
+                <div className='text-primary'>
+                    <p className='text-center fw-bold'>Quiz of {name}</p>
+                    <Container>
+                        <Row className="justify-content-center">
+                            <Col md={8}>
+                                {
+                                    questions.map(question => <Question key={question.id} question={question} quizNo={quizNo++}></Question>)
+                                }
+                            </Col>
+                        </Row>
+                    </Container>
+
                 </div>
-                : <p className='text-center'>Please select correct topic</p>
+                : <p className='text-center fw-bold'>Please select correct topic</p>
             }
 
         </div>
