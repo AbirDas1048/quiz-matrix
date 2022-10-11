@@ -1,0 +1,13 @@
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+.option-card:hover {
+    background-color: #c0d9fe;
+    color: #ffffff;
+}
+
+.form-check label:hover {
+    cursor: pointer;
+}
