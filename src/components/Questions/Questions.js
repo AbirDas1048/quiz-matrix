@@ -17,7 +17,7 @@ const Questions = () => {
                         <Row className="justify-content-center">
                             <Col md={8}>
                                 {
-                                    questions.map(question => <Question key={question.id} question={question} quizNo={quizNo++}></Question>)
+                                    questions.map(qs => <Question key={qs.id} qs={qs} quizNo={quizNo++}></Question>)
                                 }
                             </Col>
                         </Row>
