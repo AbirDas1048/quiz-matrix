@@ -22,12 +22,9 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav >
-                        {/* <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/quiz">Quiz</Nav.Link>
-                        <Nav.Link href="/blog">Blog</Nav.Link> */}
-                        <NavLink className='nav-link' to="/">Home</NavLink>
-                        <NavLink className='nav-link' to="/quiz">Quiz</NavLink>
-                        <NavLink className='nav-link' to="/blog">Blog</NavLink>
+                        <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/home">Home</NavLink>
+                        <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/quiz">Quiz</NavLink>
+                        <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/blog">Blog</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
