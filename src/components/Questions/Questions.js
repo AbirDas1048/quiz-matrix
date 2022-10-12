@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link, useLoaderData } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import Question from '../Question/Question';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Questions = () => {
     const loadedAllData = useLoaderData();
@@ -27,7 +28,6 @@ const Questions = () => {
                         </Row>
                     </Container>
                     <ToastContainer></ToastContainer>
-
                 </div>
                 : <p className='text-center fw-bold'>Go to <Link to='/'>Home Page</Link> and select a specific topic</p>
             }

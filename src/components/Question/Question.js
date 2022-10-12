@@ -3,8 +3,6 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react';
 import { Card, Form, Row } from 'react-bootstrap';
 import Option from '../Option/Option';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ qs, quizNo, selectedAnswer }) => {
     const { id, question, options, correctAnswer } = qs;
@@ -25,6 +23,7 @@ const Question = ({ qs, quizNo, selectedAnswer }) => {
                                 options.map((option, idx) => <Option key={idx} option={option} questionId={id} optionId={idx} correctAnswer={correctAnswer} selectedAnswer={selectedAnswer}></Option>)
                             }
                         </Row>
+
                     </Form>
                     {
                         showAnswer ? <p className='text-success'><u>Correct Answer: <span className='fw-bold'>{correctAnswer}</span></u></p> : undefined
@@ -32,7 +31,6 @@ const Question = ({ qs, quizNo, selectedAnswer }) => {
 
                 </Card.Body>
             </Card>
-
         </div>
     );
 };
