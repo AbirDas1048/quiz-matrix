@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
 const Questions = () => {
@@ -24,7 +24,7 @@ const Questions = () => {
                     </Container>
 
                 </div>
-                : <p className='text-center fw-bold'>Please select correct topic</p>
+                : <p className='text-center fw-bold'>Go to <Link to='/'>Home Page</Link> and select a specific topic</p>
             }
 
         </div>
