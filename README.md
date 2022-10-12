@@ -6,7 +6,9 @@ Live website link [Quiz Matrix](https://quiz-matrix-bebb91.netlify.app/).
 
     A Single Page Application of React.
 
-    There are some question about specific topic. On each question also some option. By selecting an option it will show it is correct or wrong in a toaster. On clicking the eye button it will show the correct answer.
+    There are some question about specific topic. On each question also some option. 
+    By selecting an option it will show it is correct or wrong in a toaster. 
+    On clicking the eye button it will show the correct answer.
 
     In Statics section there is a Bar Chart of Quiz Topics vs Total Question.
 

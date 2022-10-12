@@ -1,7 +1,6 @@
-/* .nav-bar {
-    background-color: #1e2b47;
-    color: #ffffff;
-} */
+.navbar-nav a {
+    padding-left: 10px;
+}
 
 .active {
     background-color: #CAD5E2;

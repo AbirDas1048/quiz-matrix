@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
+import logo from '../../images/logo.png';
 
 const NavBar = () => {
     return (
@@ -10,7 +11,7 @@ const NavBar = () => {
                 <Navbar.Brand href="/">
                     <img
                         alt=""
-                        src={process.env.PUBLIC_URL + "/logo.png"}
+                        src={logo}
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
