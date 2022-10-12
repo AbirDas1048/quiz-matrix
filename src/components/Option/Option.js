@@ -7,8 +7,8 @@ const Option = ({ option, questionId, optionId, selectedAnswer, correctAnswer })
     return (
         <Col>
             <Card className='h-100 option-card'>
-                <Card.Body>
-                    <Form.Check type='radio' id={radioId} >
+                <Card.Body className='d-flex justify-content-center align-items-center'>
+                    <Form.Check type='radio' id={radioId}  >
                         <Form.Check.Input onClick={() => selectedAnswer(correctAnswer, option)} type='radio' name={questionId} className="" />
                         <Form.Check.Label className="w-100">{option}</Form.Check.Label>
                     </Form.Check>
