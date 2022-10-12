@@ -13,9 +13,9 @@ In Statics section there is a Bar Chart of Quiz Topics vs Total Question.
 In Blog Section there are some question and answer.
 
 ### Packages
-React
-React Router
-React Bootstrap
-React Font Awesome
-Rechart
-React Toaster
+1. React
+2. React Router
+3. React Bootstrap
+4. React Font Awesome
+5. Rechart
+6. React Toaster
