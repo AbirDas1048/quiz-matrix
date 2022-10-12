@@ -11,13 +11,13 @@ const Header = () => {
             <Row className='align-items-center'>
                 <Col sm={8}><Image src={background} className="img-fluid"></Image></Col>
                 <Col sm={4}>
-                    <figure class="text-center">
-                        <blockquote class="blockquote">
+                    <figure className="text-center">
+                        <blockquote className="blockquote">
                             <p><FontAwesomeIcon icon={faQuoteLeftAlt}></FontAwesomeIcon>
                                 <span className='quote-text'>Programming is the art of telling another human being what one wants the computer to do.</span>
                                 <FontAwesomeIcon icon={faQuoteRightAlt}></FontAwesomeIcon></p>
                         </blockquote>
-                        <figcaption class="blockquote-footer">
+                        <figcaption className="blockquote-footer">
                             <cite>Donald Ervin Knuth</cite>
                         </figcaption>
                     </figure>

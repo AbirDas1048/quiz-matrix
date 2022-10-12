@@ -21,7 +21,8 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav >
                         <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/home">Home</NavLink>
-                        <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/quiz">Quiz</NavLink>
+                        <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/quiz">Topics</NavLink>
+                        <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/statics">Statics</NavLink>
                         <NavLink className="nav-link {({ isActive }) => isActive ? 'active' : undefined}" to="/blog">Blog</NavLink>
                     </Nav>
                 </Navbar.Collapse>

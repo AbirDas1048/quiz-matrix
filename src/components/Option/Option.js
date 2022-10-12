@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Form } from 'react-bootstrap';
+import { Card, Col, Form } from 'react-bootstrap';
 import './Option.css';
 
 const Option = ({ option, questionId, optionId, selectedAnswer }) => {

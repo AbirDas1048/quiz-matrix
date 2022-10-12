@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 import Blog from './components/Blog/Blog';
 import Questions from './components/Questions/Questions';
+import Statics from './components/Statics/Statics';
 function App() {
   const router = createBrowserRouter([
     {
@@ -33,15 +34,29 @@ function App() {
           element: <Quiz></Quiz>
         },
         {
-          path: '/blog',
-          element: <Blog></Blog>
-        },
-        {
           path: '/questions/:topicId',
           loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);
           },
           element: <Questions></Questions>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
+        },
+        {
+          path: '/statics',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Statics></Statics>
+        },
+        {
+          path: '/*',
+          element:
+            <div>
+              <h4 className='text-danger text-center mt-3'>404 - Page Not Found</h4>
+            </div>
         }
 
       ]
